@@ -27,7 +27,7 @@ def isInCardioidOrBulb(x, y):
 
 def rgbData(window, step, maxits, abslim):
     [xmin, xmax, ymin, ymax] = window
-    
+
     pixels = []
 
     histogram = range(maxits+1)
@@ -50,7 +50,7 @@ def rgbData(window, step, maxits, abslim):
             z     = 0
             zprev = 0
             its   = 0
-            
+
             if isInCardioidOrBulb(x, y):
                 its = maxits
             else:
@@ -75,6 +75,5 @@ def rgbData(window, step, maxits, abslim):
     for i in range(len(pixels)):
             hue = pixels[i]*histogram[pixels[i]]/float(total)
             pixels[i] = palette(hue, pixels[i], maxits)
-    
-    return pixels
 
+    return pixels

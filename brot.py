@@ -12,7 +12,7 @@ startTime = time.time()
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('-s', '--step', dest='step', type=float, metavar='F', 
+parser.add_argument('-s', '--step', dest='step', type=float, metavar='F',
                     help='step size', default=0.005)
 parser.add_argument('-i', '--iterations', dest='maxits', type=int, metavar='N',
                     help='maximum number of iterations', default=2000)
@@ -36,11 +36,10 @@ im.putdata(data)
 im.format = 'PNG'
 saveName = args.filename + '.png'
 im.save(saveName)
-print 'Output to ' + saveName 
+print 'Output to ' + saveName
 
 im.show()
 
 endTime = time.time()
 elapsed = endTime-startTime
 sys.stdout.write("%.2f seconds elapsed.\n" % elapsed)
-

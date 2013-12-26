@@ -3,6 +3,8 @@ brot
 
 A Mandelbrot set visualizer.
 
+![step1e-3](https://raw.github.com/sbool/brot/master/step1e-3.png)
+
 Dependencies
 ------------
 
